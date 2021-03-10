@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include<stdio.h>//æŠ„äºçŸ¥ä¹
 #include<windows.h>
 #include<time.h>
 #include<conio.h>
-#define SIZE 19//¶¨ÒåµØÍ¼´óĞ¡
+#define SIZE 19//å®šä¹‰åœ°å›¾å¤§å°
 
 void init(int*, int*, int[SIZE][SIZE]);
 int getCommand(int);
@@ -120,15 +120,15 @@ return 0;
 		{
 			if (i == 0)
 			{
-				printf("©³");
+				printf("â”");
 			}
 			else if (i == SIZE)
 			{
-				printf("©¥©¥©·");
+				printf("â”â”â”“");
 			}
 			else
 			{
-				printf("©¥");
+				printf("â”");
 			}
 		}
 		printf("\n");
@@ -138,7 +138,7 @@ return 0;
 			{
 				if (j == 0)
 				{
-					printf("©§");
+					printf("â”ƒ");
 				}
 				if (map[i][j] == 1)
 				{
@@ -150,7 +150,7 @@ return 0;
 				}
 				else if (map[i][j] == -1)
 				{
-					printf("¡ï");
+					printf("â˜…");
 				}
 				else
 				{
@@ -158,24 +158,24 @@ return 0;
 				}
 				if (j == SIZE - 1)
 				{
-					printf("©§");
+					printf("â”ƒ");
 				}
 			}
 			printf("\n");
 		}
-		for (i = 0; i <= SIZE; i++)//ÊäÈëÏÂ±ß¿ò
+		for (i = 0; i <= SIZE; i++)//è¾“å…¥ä¸‹è¾¹æ¡†
 		{
 			if (i == 0)
 			{
-				printf("©»");
+				printf("â”—");
 			}
 			else if (i == SIZE)
 			{
-				printf(" ©¥©¥©¿");
+				printf(" â”â”â”›");
 			}
 			else
 			{
-				printf("©¥");
+				printf("â”");
 			}
 		}
 		printf("\n");
